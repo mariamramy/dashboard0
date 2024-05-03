@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
@@ -164,7 +165,7 @@
                         <Insets left="40.0" right="40.0" />
                      </padding>
                   </Separator>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="258.0">
                      <children>
                         <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #FF5056;" stylesheets="@../../../../java/css/styles.css" text="Log Out" textFill="WHITE">
                            <font>
@@ -181,4 +182,23 @@
          </padding>
       </VBox>
    </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="41.0" prefWidth="216.0" text="Recent Posts">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="250.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../../../../java/css/styles.css">
+               <content>
+                  <HBox prefHeight="228.0" prefWidth="1008.0" styleClass="transparent" stylesheets="@../../../../java/css/styles.css" />
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
 </BorderPane>
